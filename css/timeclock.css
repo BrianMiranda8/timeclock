@@ -1,0 +1,477 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+	font-family: ariel, geneva, sans-serif;
+	background-color: #B2FAFA;
+}
+
+.center {
+	text-align: center;
+}
+
+.button {
+	//padding: 10px 20px;
+	background-color: #f5f5f5;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	width: 214px;
+	height: 45px;
+	//display: inline-block;
+}
+
+.button:hover:not([disabled]) {
+	background-color: lightgray;
+	color: gray;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+}
+
+.button:disabled {
+	cursor: none;
+	background-color: lightgray;
+	color: gray;
+	border:none;
+}
+
+.in-button {
+	//padding: 10px 20px;
+	text-align: center;
+	background-image: linear-gradient(#FFC300, #FFF000);
+	font-size: 20px;
+	border-top: 1px solid lightgray;
+	border-left: 1px solid lightgray;
+	cursor: pointer;
+	width: 214px;
+	height: 45px;
+	//display: inline-block;
+}
+
+.in-button:hover {
+	background-color: #ff8666;
+	color: white;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+}
+
+.out-button {
+	text-align: center;
+	color: white;
+	background-image: linear-gradient(blue, lightblue);
+	font-size: 20px;
+	border-top: 1px solid lightgray;
+	border-left: 1px solid lightgray;
+	cursor: pointer;
+	width: 214px;
+	height: 45px;
+}
+
+.out-button:hover {
+	background-color: #ff8666;
+	color: lightgray;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+}
+
+.edit-button {
+	height: 18px;
+	width: 18px;
+	background-color: transparent;
+	//color: transparent;
+	background-image: url("../images/edit-button1.png");
+	background-repeat: no-repeat;
+	background-size: 15px 16px;
+	display: inline-block;
+	border: none;
+}
+
+.edit-button:hover {
+	height: 18px;
+	width: 18px;
+	background-color: transparent;
+	color: transparent;
+	background-image: url("../images/edit-button.png");
+	background-repeat: no-repeat;
+	background-size: 18px 18px;
+	display: inline-block;
+	border: none;
+}
+
+.p1 {
+	position: absolute;
+	top: 70px;
+	left: 43px;
+}
+
+.p2 {
+	position: absolute;
+	top: 123px;
+	left: 43px;
+}
+
+.p3 {
+	position: absolute;
+	top: 184px;
+	left: 43px;
+}
+
+.p4 {
+	position: absolute;
+	top: 245px;
+	left: 43px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.hidden {
+	display: none;
+}
+
+
+.quitButton {
+	background-image: url("../images/quit-button.png");
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: right .7em top 50%, 0 0;
+	background-color: #F5F5F5;
+	border: 1px solid gray;
+}
+
+.cancel {
+	background-image: linear-gradient(red, #ff8000);
+	//padding: 10px 20px;
+	text-align: center;
+	border-top: 1px solid lightgray;
+	border-left: 1px solid lightgray;
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	width: 214px;
+	height: 45px;
+	//display: inline-block;
+}
+
+.cancel:hover {
+	background-color: #ff8666;
+	color: lightgray;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+}
+
+/*style the employee selection box*/
+.select-employee {
+	text-align: left;
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 43px;
+	font-size: 16px;
+	font-family: ariel, geneva, sans-serif;
+	font-weight: 700;
+	color: #444;
+	line-height: 1.3;
+	padding: .6em 1.4em .5em .8em;
+	width: 214px;
+	//max-width: 100%; 
+	heigth: 14%;
+	box-sizing: border-box;
+	//margin: auto;
+	border: 1px solid #aaa;
+	box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+	border-radius: .5em;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: white;
+	background-image: url(https://rodbikes.com/images/downArrow.png);
+	background-repeat: no-repeat, repeat;
+	background-position: right .7em top 50%, 0 0;
+	background-size: .65em auto, 100%;
+}
+
+.select-employee::-ms-expand {
+	display: none;
+}
+
+.select-employee:hover {
+	border-color: #888;
+}
+
+.select-employee:focus {
+	border-color: #aaa;
+	box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+	box-shadow: 0 0 0 3px -moz-mac-focusring;
+	color: #222;
+	outline: none;
+}
+
+.select-employee option {
+	font-weight: normal;
+}
+
+/*style the employee selection box*/
+.select-employee-edit {
+	display: block;
+	margin: auto;
+	//position: absolute;
+	top: 10px;
+	left: 43px;
+	font-size: 16px;
+	font-family: ariel, geneva, sans-serif;
+	font-weight: 700;
+	color: #444;
+	line-height: 1.3;
+	padding: .6em 1.4em .5em .8em;
+	width: 214px;
+	//max-width: 100%; 
+	heigth: 14%;
+	box-sizing: border-box;
+	//margin: auto;
+	border: 1px solid #aaa;
+	box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+	border-radius: .5em;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: white;
+	background-image: url(https://rodbikes.com/images/downArrow.png);
+	background-repeat: no-repeat, repeat;
+	background-position: right .7em top 50%, 0 0;
+	background-size: .65em auto, 100%;
+}
+
+.select-employee-edit::-ms-expand {
+	display: none;
+}
+
+.select-employee-edit:hover {
+	border-color: #888;
+}
+
+.select-employee-edit:focus {
+	border-color: #aaa;
+	box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+	box-shadow: 0 0 0 3px -moz-mac-focusring;
+	color: #222;
+	outline: none;
+}
+
+.select-employee-edit option {
+	font-weight: normal;
+}
+
+.edit-dropdown {
+	//margin: auto;
+	font-size: 16px;
+	font-family: ariel, geneva, sans-serif;
+	font-weight: 700;
+	color: #444;
+	line-height: 1.3;
+	padding: .6em 1.4em .5em .8em;
+	box-sizing: border-box;
+	border: 1px solid #aaa;
+	box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+	border-radius: .5em;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: white;
+	background-image: url(https://rodbikes.com/images/downArrow.png);
+	background-repeat: no-repeat, repeat;
+	background-position: right .3em top 50%, 0 0;
+	background-size: .65em auto, 100%;
+}
+
+.entry-div {
+	position: relative;
+	margin: auto;
+	width: 300px;
+	height: 300px;
+	border-right: 2px solid #36B8D8;
+	border-bottom: 2px solid #36B8D8;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+	background-image: url('/images/blue-background.png');
+	border-radius: 4px;
+}
+
+.manager-login {
+	position: relative;
+	margin: auto;
+	//color: black;
+	width: 300px;
+	height: 300px;
+	border-right: 2px solid #36B8D8;
+	border-bottom: 2px solid #36B8D8;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+	//background-image: url('/images/apple-background.png');
+	border-radius: 4px;
+	border-radius: 4px;
+}
+
+.manager-login::after {
+	content: "";
+	background: url('/images/rainbow-apple-background.png');
+	//background: url('/images/apple-background.png');
+	opacity: 0.25;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+
+p {
+	text-align: center;
+}
+
+input {
+	text-align: left;
+	font-family: ariel, geneva, sans-serif;
+	font-size: .9em;
+	padding: 6px 12px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.time-report {
+	width: 600px;
+	margin: auto;
+	border: 1px solid gray;
+	padding-bottom: 10px;
+}
+
+table.report-table {
+	width: 90%;
+	margin: auto;
+	font-size: .9em;
+}
+
+table.report-table td {
+	color: #4B4848;
+	background-color: white;
+	text-align: center;
+	border-top: 1px solid gray;
+	border-left: 1px solid gray;
+	border-bottom: 1px solid lightgray;
+	border-right: 1px solid lightgray;
+}
+
+table.report-table td:nth-child(3) {
+	text-align: right;
+	padding: 1px;
+	color: black;
+}
+
+table.report-table th {
+	//border: 1px solid blue;
+	background-color: blue;
+	//#4B4848;
+	color: white;
+}
+
+.manager-report {
+	width: 795px;
+	margin: auto;
+	border: 1px solid gray;
+	padding-bottom: 10px;
+}
+
+table.manager-report-table {
+	width: 95%;
+	margin: auto;
+	margin-left: 45px;
+	font-size: .85em;
+}
+
+table.manager-report-table td {
+	color: black;
+	width: 200px;
+	background-color: white;
+	text-align: center;
+	border-top: 1px solid lightgray;
+	border-left: 1px solid lightgray;
+	border-bottom: 1px solid #F3F3F3;
+	border-right: 1px solid #F3F3F3;
+	height: 23px;
+}
+
+table.manager-report-table td:nth-child(3) {
+	text-align: right;
+	padding: 1px;
+	color: black;
+	width: 80px;
+	text-align: center;
+}
+
+table.manager-report-table td:nth-child(4) {
+	text-align: right;
+	padding: 1px;
+	color: black;
+	width: 80px;
+	text-align: center;
+}
+
+table.manager-report-table td:nth-child(5) {
+	text-align: center;
+	border: none;
+	padding: 1px;
+	background-color: transparent;
+	width: 40px;
+}
+
+table.manager-report-table td:nth-child(6) {
+	text-align: left;
+	padding: 1px;
+	color: black;
+	background-color: transparent;
+	border: none;
+	width: 125px;
+	color: red;
+
+}
+
+table.manager-report-table th {
+	//border: 1px solid #A1A1A1;
+	background-color: #A1A1A1;
+	//#4B4848;
+	color: white;
+}
+
+div.punch-edit {
+	width: 600px;
+	margin: auto;
+	border: 1px solid gray;
+	border-radius: 8px;
+	padding: 8px;
+}
+
+div.punch-edit input {
+	margin: 4px;
+}
+
+div.punch-edit table {
+	margin: auto;
+
+}
+
+form {
+	margin: 0em;
+}

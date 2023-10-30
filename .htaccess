@@ -1,0 +1,3 @@
+# Disable directory listing
+Options -Indexes
+#ErrorDocument 403 /timeclock/
